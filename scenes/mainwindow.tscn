@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dbxm7gtcop4e5"]
+
+[ext_resource type="Texture2D" uid="uid://c4vjyx87rxp2b" path="res://assets/images/backgroundmain.jpg" id="1_ef13v"]
+[ext_resource type="Texture2D" uid="uid://dc43cmmymcaby" path="res://assets/images/icon.svg" id="2_kcypf"]
+[ext_resource type="Script" uid="uid://l1ovpmxgknvx" path="res://scripts/Sprite2d.cs" id="3_3tqmb"]
+[ext_resource type="Texture2D" uid="uid://eii2oypj57wn" path="res://assets/images/packman.png" id="3_kcypf"]
+
+[node name="Mainwindow" type="Sprite2D" unique_id=1674553887]
+position = Vector2(576.5, 325)
+scale = Vector2(0.19183335, 0.16149996)
+texture = ExtResource("1_ef13v")
+
+[node name="Label" type="Label" parent="." unique_id=40845797]
+offset_left = -2830.0938
+offset_top = 1826.626
+offset_right = -1295.0938
+offset_bottom = 1957.959
+theme_override_colors/font_color = Color(0.811284, 0.8650111, 0.9899643, 1)
+theme_override_font_sizes/font_size = 50
+text = "Written by GODOT an open-source Game Engine and C# with <3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Label" unique_id=1669525978]
+position = Vector2(-81.02289, 55.130066)
+scale = Vector2(1.0038861, 1.1020927)
+texture = ExtResource("2_kcypf")
+
+[node name="Label2" type="Label" parent="." unique_id=359474855]
+offset_left = -258.0366
+offset_top = -458.20444
+offset_right = 263.75345
+offset_bottom = -145.80014
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 150
+text = "Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=2161718]
+offset_left = -211.12085
+offset_top = 817.3376
+offset_right = 189.573
+offset_bottom = 1129.742
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 150
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=525972708]
+position = Vector2(-2437.0112, 761.61035)
+scale = Vector2(0.3677716, 0.41286206)
+texture = ExtResource("3_kcypf")
+script = ExtResource("3_3tqmb")

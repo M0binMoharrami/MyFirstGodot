@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cklbwyp1kdmsa"]
+
+[ext_resource type="Texture2D" uid="uid://c4vjyx87rxp2b" path="res://assets/images/backgroundmain.jpg" id="1_rnjyy"]
+[ext_resource type="Texture2D" uid="uid://eii2oypj57wn" path="res://assets/images/packman.png" id="2_4vge2"]
+[ext_resource type="Script" uid="uid://bmujvgsta70xa" path="res://scripts/GamePlayer.cs" id="3_04qyp"]
+[ext_resource type="Texture2D" uid="uid://1xwyvi0435g4" path="res://assets/images/apple.png" id="4_04qyp"]
+[ext_resource type="Script" uid="uid://cfianherhfs2d" path="res://scripts/Eatable.cs" id="5_j7wrs"]
+
+[node name="Node2D" type="Node2D" unique_id=668712011]
+scale = Vector2(1, 1.0000001)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1522225912]
+position = Vector2(575.49994, 326.99994)
+scale = Vector2(0.19183332, 0.16249998)
+texture = ExtResource("1_rnjyy")
+
+[node name="Eatable" type="Sprite2D" parent="." unique_id=863919645]
+position = Vector2(1000.99994, 145.42784)
+scale = Vector2(0.021005899, 0.018595858)
+texture = ExtResource("4_04qyp")
+script = ExtResource("5_j7wrs")
+
+[node name="Pacman" type="Sprite2D" parent="." unique_id=221849338]
+position = Vector2(565, 337.99994)
+scale = Vector2(0.05666665, 0.051057845)
+texture = ExtResource("2_4vge2")
+script = ExtResource("3_04qyp")
+
+[node name="Label" type="Label" parent="." unique_id=1777836686]
+offset_left = 7.0
+offset_top = 5.9999995
+offset_right = 236.0
+offset_bottom = 102.999985
+theme_override_font_sizes/font_size = 39
+text = "Score = 0"
